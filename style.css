@@ -782,3 +782,250 @@ p {
         margin-top: 48px;
     }
 }
+
+/* DATA CATALOGUE */
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    margin-top: 64px;
+}
+
+.catalogue-grid article {
+    background: var(--white);
+    padding: 48px 36px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    min-height: 520px;
+}
+
+.catalogue-grid h3 {
+    margin: 24px 0 28px;
+    font-size: 28px;
+    line-height: 0.95;
+}
+
+.catalogue-grid p {
+    margin-bottom: 22px;
+}
+
+.catalogue-grid strong {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.catalogue-grid a {
+    text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+    .catalogue-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== HEATMAP LEGEND ===== */
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.map-wrapper iframe {
+    display: block;
+}
+
+.map-legend {
+    position: absolute;
+    right: 3px;
+    bottom: 20px;
+    background: #f4efe6;
+    border: 1px solid #d6d0c5;
+    padding: 6px;
+    z-index: 5;
+}
+
+.map-legend img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .map-legend img {
+        width: 90px;
+    }
+}
+
+.placeholder-section{
+    margin:80px 0;
+}
+
+.placeholder{
+    padding:28px;
+    border:2px dashed #cfcfcf;
+    border-radius:12px;
+    background:#fafafa;
+    color:#666;
+    line-height:1.7;
+    font-style:italic;
+}
+
+/* ------ METHODS ------ */
+
+#methods {
+    min-height: auto;
+}
+
+#methods h2 {
+    margin-bottom: 48px;
+}
+
+#methods > p {
+    margin-bottom: 40px;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 48px;
+}
+
+.method-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 260px;
+
+    background: var(--white);
+    border: 1px solid var(--line);
+    padding: 28px;
+}
+
+.method-card h3 {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin: 0 0 18px;
+}
+
+.method-card p {
+    max-width: none;
+    margin-bottom: 18px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.method-card p:last-child {
+    margin-bottom: 0;
+}
+
+.method-card strong {
+    color: var(--text);
+}
+
+@media (max-width: 900px) {
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .method-card {
+        min-height: auto;
+    }
+}
+
+/* ------ NEXT STEPS ------ */
+
+.next-steps-section {
+    min-height: auto !important;
+    height: auto !important;
+    display: block !important;
+
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.next-steps-section .eyebrow {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+
+.next-steps-section h2 {
+    margin-top: 0 !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.next-steps-section ul {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Übergänge kompakter machen */
+
+.limitations-section {
+    padding-bottom: 4rem !important;
+}
+
+.next-steps-section + .text-section {
+    padding-top: 4rem !important;
+}
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 60px;
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+}
+
+.reference-grid article {
+    background: var(--white);
+    padding: 40px 34px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    min-height: 420px;
+}
+
+.reference-grid h3 {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+}
+
+.reference-grid p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.reference-grid strong {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+}
+
+.reference-grid a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .reference-grid {
+        grid-template-columns: 1fr;
+    }
+}
