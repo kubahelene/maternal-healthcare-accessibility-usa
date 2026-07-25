@@ -436,6 +436,21 @@ p {
     text-decoration: underline;
 }
 
+/* CONSISTENT RESOURCE LINKS */
+
+.resource-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resource-link:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
 /* STAKEHOLDER */
 
 .stakeholder-section {
@@ -816,6 +831,13 @@ p {
 }
 
 .catalogue-grid a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.catalogue-grid a:hover {
+    opacity: 0.75;
     text-decoration: underline;
 }
 
@@ -1022,6 +1044,11 @@ p {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
+}
+
+.reference-grid a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
 }
 
 @media (max-width: 900px) {

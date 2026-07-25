@@ -141,7 +141,7 @@
     <div class="story-intro">
         <h3>From outcomes to access</h3>
         <p>
-            The website first identifies where maternal and infant health outcomes differ and then explores possible explanations related to healthcare accessibility.
+            Deficient maternal healthcare accessibility can contribute to poorer maternal and infant health outcomes. The website therefore first identifies regional differences in mortality and then examines whether unequal infrastructure, spatial access, insurance coverage and social barriers may help explain these patterns.
         </p>
     </div>
 
@@ -203,28 +203,23 @@
     <h3>Relationship between maternal and infant mortality</h3>
 
     <p>
-        Comparative analysis of maternal and infant mortality rates across U.S. states.
-        States with higher maternal mortality frequently also experience elevated infant mortality, suggesting that both indicators are influenced by broader structural inequalities in healthcare accessibility.
+        The scatter plot compares maternal and infant mortality rates across U.S. states. Several states with higher maternal mortality also show elevated infant mortality, indicating a possible relationship between the two outcomes. However, the chart does not establish causality. The observed pattern may also be influenced by socioeconomic conditions, demographic differences, data quality and the limitations of state-level aggregation.
     </p>
 
-    <div class="chart-placeholder" style="min-height:484px; display:flex; align-items:center; justify-content:center; background:#f5f5f5; border:1px dashed #ccc; border-radius:8px;">
-        <p style="margin:0; color:#666; font-style:italic;">
-            <div style="min-height:3389px" id="datawrapper-vis-LIFLm">
-                <script
-                type="text/javascript"
-                defer
-                src="https://datawrapper.dwcdn.net/LIFLm/embed.js"
-                charset="utf-8"
-                data-target="#datawrapper-vis-LIFLm">
-                </script>
+    <div style="min-height:514px" id="datawrapper-vis-LIFLm">
+    <script
+        type="text/javascript"
+        defer
+        src="https://datawrapper.dwcdn.net/LIFLm/embed.js"
+        charset="utf-8"
+        data-target="#datawrapper-vis-LIFLm">
+    </script>
 
-                <noscript>
-                <img src="https://datawrapper.dwcdn.net/LIFLm/full.png"
-                alt="Comparison between Infant and Maternal Mortality Rates (Grouped Bars)" />
-                </noscript>
-                </div>
-        </p>
-    </div>
+    <noscript>
+        <img
+            src="https://datawrapper.dwcdn.net/LIFLm/full.png"
+            alt="Comparison between infant and maternal mortality rates">
+    </noscript>
 </div>
 
 <div class="story-intro">
@@ -236,17 +231,27 @@
 
 <div class="embed-card">
     <span class="number">04 · Infrastructure</span>
-    <h3>Hospital distribution by state</h3>
+    <h3>Hospital availability by state</h3>
     <p>
-        Hospitals represent an important component of healthcare infrastructure. This indicator helps evaluate whether healthcare infrastructure is spatially distributed in a way that supports equitable access.
+        Number of hospitals per 100,000 inhabitants by state. Normalising hospital numbers by population allows states of different sizes to be compared more meaningfully.
     </p>
 
-    <iframe title="Number of hospitals in each US-State" aria-label="Column Chart" id="datawrapper-chart-HORvY" src="https://datawrapper.dwcdn.net/HORvY/1/" scrolling="no" frameborder="0" style="width:0; min-width:100% !important; border:none;" height="465" data-external="1"></iframe>
+    <iframe
+    title="Number of hospitals in each state per 100,000 inhabitants"
+    aria-label="Column Chart"
+    id="datawrapper-chart-iTdIt"
+    src="https://datawrapper.dwcdn.net/iTdIt/1/"
+    scrolling="no"
+    frameborder="0"
+    style="width:0; min-width:100% !important; border:none;"
+    height="465"
+    data-external="1">
+    </iframe>
 
     <div class="interpretation-box">
         <strong>Interpretation</strong>
         <span>
-            This chart serves as a proxy for overall healthcare infrastructure. While it doesn't specifically represent maternity hospitals or obstetric facilities, it reveals broader differences in healthcare capacity and potential access to care across US states.
+            Normalising hospital numbers by population provides a more comparable indicator of healthcare infrastructure than absolute hospital counts. However, the dataset includes all hospitals and does not distinguish maternity hospitals or obstetric facilities.
         </span>
     </div>
 </div>
@@ -329,15 +334,15 @@
     <span class="number">08 · Care experiences</span>
     <h3>Home births</h3>
     <p>
-        Whilst home births are legal in all 50 US-states, birth practices vary spatially and provide another perspective on maternal healthcare experiences.
+       Whilst home births are legal in all 50 U.S. states, their frequency and the reasons for choosing them vary spatially. Common motivations include greater autonomy, fewer medical interventions, negative previous hospital experiences, fear of medical institutions and the preference for giving birth in a familiar environment.
     </p>
 
-    <iframe title="Number of homebirths in the US in 2023" aria-label="Choropleth map" id="datawrapper-chart-SnGbA" src="https://datawrapper.dwcdn.net/SnGbA/4/" scrolling="no" frameborder="0" style="width:0; min-width:100% !important; border:none;" height="485" data-external="1"></iframe>
+    <iframe title="Number of home births in the US in 2023" aria-label="Choropleth map" id="datawrapper-chart-SnGbA" src="https://datawrapper.dwcdn.net/SnGbA/4/" scrolling="no" frameborder="0" style="width:0; min-width:100% !important; border:none;" height="485" data-external="1"></iframe>
 
     <div class="interpretation-box">
         <strong>Interpretation</strong>
         <span>
-        Although home births remain relatively uncommon, regional differences may indicate variations in healthcare accessibility, travel distance and local care practices.
+        Home births increased substantially in the United States between 2016 and 2023. Regional differences may reflect personal preferences, previous care experiences and unequal access to maternity services. However, planned home births are associated with higher neonatal and perinatal risks than hospital births, particularly where access to emergency medical care is delayed.
         </span>
     </div>
 </div>
@@ -570,16 +575,42 @@
                     <p>AI tools (VS Code Copilot and ChatGPT) were used to support coding challenges, debugging and language refinement during the development of the website. The website concept, analytical structure, data selection, interpretation and visualisation design were developed independently by the project team. AI tools were not used for collecting, processing or analysing the project data.
 
                         Nina used ChatGPT 5.5 with a ChatGPT Plus subscription to generate an initial Overpass Turbo query for filtering hospital locations in the United States. The generated code was subsequently reviewed, adapted and simplified manually. No further AI tools were used for other parts of Nina’s work.
+                        <br>
+                        <a class="resource-link"
+                             href="https://chatgpt.com/share/6a5914b4-5a68-83ed-a2e9-bfdfabea1c23"
+                             target="_blank"
+                             rel="noopener noreferrer">
+                             View ChatGPT conversation ↗
+                            </a>
+                        <br>
 
-                        Link to the full prompt and ChatGPT conversation:
-                        https://chatgpt.com/share/6a5914b4-5a68-83ed-a2e9-bfdfabea1c23
-
-                        Link to the shortened Overpass Turbo code:
-                        https://overpass-turbo.eu/s/2tlI
+                        <a class="resource-link"
+                             href="https://overpass-turbo.eu/s/2tlI"
+                             target="_blank"
+                             rel="noopener noreferrer">
+                            View Overpass Turbo query ↗
+                        </a>
 
                     </p>
                 </article>
 
+            <article class="method-card">
+                <h3>Project workflow</h3>
+
+                <p>
+                    During the project, multiple datasets were collected, compared and evaluated before selecting the final indicators presented on this website.
+                </p>
+
+                <p>
+                    The working spreadsheet documents discarded datasets, intermediate calculations and the population data used to calculate hospitals per 100,000 inhabitants.
+                </p>
+
+                <p>
+                    <a class="resource-link" href="SDG3_Data/mitstaaten.xlsx" download>
+                        Download project workbook (.xlsx)
+                    </a>
+                </p>
+            </article>
             </div>
 
         </section>
@@ -622,11 +653,11 @@
                 <span class="number">03</span>
                 <h3>Hospitals by state</h3>
 
-                <p><strong>Source</strong><br>Esri</p>
+                <p><strong>Source</strong><br>Esri & U.S. Census Bureau</p>
                 <p><strong>Access</strong><br>Public</p>
-                <p><strong>Used for</strong><br>Hospital distribution chart</p>
-                <p><strong>Description</strong><br>Dataset containing the number of hospitals in each U.S. state.</p>
-                <p><strong>Why included</strong><br>States with a higher hospital density generally provide better access to healthcare services.</p>
+                <p><strong>Used for</strong><br>Hospital availability chart</p>
+                <p><strong>Description</strong><br>Hospital numbers by state combined with U.S. Census population data to calculate hospitals per 100,000 inhabitants.</p>
+                <p><strong>Why included</strong><br>Population-normalised values allow meaningful comparisons of healthcare infrastructure across states.</p>
                 <p><strong>Limitations</strong><br>Includes all hospitals and does not distinguish maternity or obstetric facilities.</p>
                 <p><a href="https://services2.arcgis.com/RQcpPaCpMAXzUI5g/arcgis/rest/services/US_Hospitals/FeatureServer" target="_blank">Open dataset ↗</a></p>
             </article>
@@ -789,6 +820,40 @@
 
         </article>
 
+        <article>
+            <span class="number">04</span>
+
+            <h3>Grünebaum &amp; Chervenak (2024)</h3>
+
+            <p>
+                <strong>Source</strong><br>
+                Journal of Perinatal Medicine
+            </p>
+
+            <p>
+                <strong>Used for</strong><br>
+                Trends, motivations and health risks associated with home births in the United States.
+            </p>
+
+            <p>
+                <strong>Description</strong><br>
+                Article discussing why women choose home births and comparing neonatal and perinatal risks across birth settings.
+            </p>
+
+            <p>
+                <strong>Reference</strong><br>
+                Grünebaum, A., &amp; Chervenak, F. A. (2024). Why do women choose home births? Journal of Perinatal Medicine, 52(6), 575–585.
+            </p>
+
+            <a class="resource-link"
+            href="https://www.degruyterbrill.com/document/doi/10.1515/jpm-2024-0175/html"
+            target="_blank"
+            rel="noopener noreferrer">
+                Open article ↗
+            </a>
+        </article>
+
+    </div>
     </div>
 </section>
 
